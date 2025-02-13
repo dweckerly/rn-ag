@@ -1,9 +1,10 @@
 import { Link } from 'expo-router';
 import { View, Text, StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function GuildScreen() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text>Guild</Text>
       {/* <Link href="/details/1">View first user details</Link>
       <Link href="/details/2">View second user details</Link>
@@ -14,7 +15,7 @@ export default function GuildScreen() {
         }}>
         View user details
       </Link> */}
-    </View>
+    </SafeAreaView>
   );
 }
 
